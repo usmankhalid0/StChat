@@ -19,12 +19,12 @@ class chat implements ShouldBroadcast
      *
      * @return void
      */
-    public $username ;
-    public $message ;
-    public function __construct($uname,$msg)
+    public $Uusername ;
+    public $Umessage ;
+    public function __construct( $username , $message)
     {
-        $this->username = $uname ;
-        $this->message = $msg ;
+        $this->Uusername = $username ;
+        $this->Umessage = $message ;
     }
 
     /**
@@ -34,6 +34,6 @@ class chat implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new Channel('chat');
+        return new Channel('chatmessage');
     }
 }

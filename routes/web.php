@@ -17,3 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('chat',[App\Http\Controllers\ChatController::class,'index']);
+Route::post('sendmsg',[App\Http\Controllers\ChatController::class,'sendmsg'])->name('sendmsg');
+
