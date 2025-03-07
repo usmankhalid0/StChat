@@ -1,1 +1,1 @@
-# StChat
+this project is used for one to one communication between users. one of the advantages of this project is user do need authenticate .once a user enter its name then he can start communication between his friends
